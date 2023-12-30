@@ -31,3 +31,4 @@ wheel
 ipywidgets
 pymc
 bambi
+networkx
