@@ -10,11 +10,15 @@ from pathlib import Path
 from typing import List, Union, Callable
 
 
+from matplotlib import style
+
 
 BASE_DIR = Path("/src/")
 DATA_DIR = BASE_DIR / "data" / "statistical_rethinking/"
 IMAGE_DIR = BASE_DIR / "dissemination" / "images" / "statistical_rethinking/" 
 
+STYLE = BASE_DIR / "src" / "utils" /"statistical-rethinking-2023.mplstyle"
+style.use(STYLE)
 
 
 def load_data(dataset, delimiter=";"):
